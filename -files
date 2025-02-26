@@ -1,0 +1,60 @@
+[33mcommit 01bbb5e7ea989876a1aefb4289b6b41878f26250[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: sumitnarkhedeCesta <sumit.narkhede@cestasoft.co.za>
+Date:   Tue Feb 25 09:46:18 2025 +0530
+
+    Initial commit
+---
+ app.js                                             |    161 [32m+[m
+ candidates.js                                      |    125 [32m+[m
+ config/development.js                              |      3 [32m+[m
+ config/production.js                               |      3 [32m+[m
+ controllers/activityController.js                  |     35 [32m+[m
+ controllers/candidatesController.js                |    872 [32m+[m
+ controllers/employeeController.js                  |    269 [32m+[m
+ controllers/userController.js                      |    192 [32m+[m
+ middleware/Cetsasoft FTE Contract Hourly.docx      |    Bin [31m0[m -> [32m84007[m bytes
+ middleware/Cetsasoft FTE Contract Monthly.docx     |    Bin [31m0[m -> [32m101969[m bytes
+ middleware/Independent_Contractor_Agreement.docx   |    Bin [31m0[m -> [32m166477[m bytes
+ middleware/auth.js                                 |     24 [32m+[m
+ middleware/upload.js                               |     78 [32m+[m
+ middleware/upload1.js                              |    190 [32m+[m
+ middleware/upload2.js                              |    154 [32m+[m
+ models/activity.js                                 |     20 [32m+[m
+ models/candidates.js                               |    122 [32m+[m
+ models/employee.js                                 |     91 [32m+[m
+ models/users.js                                    |     23 [32m+[m
+ node_modules/.bin/color-support                    |     16 [32m+[m
+ node_modules/.bin/color-support.cmd                |     17 [32m+[m
+ node_modules/.bin/color-support.ps1                |     28 [32m+[m
+ node_modules/.bin/cross-env                        |     16 [32m+[m
+ node_modules/.bin/cross-env-shell                  |     16 [32m+[m
+ node_modules/.bin/cross-env-shell.cmd              |     17 [32m+[m
+ node_modules/.bin/cross-env-shell.ps1              |     28 [32m+[m
+ node_modules/.bin/cross-env.cmd                    |     17 [32m+[m
+ node_modules/.bin/cross-env.ps1                    |     28 [32m+[m
+ node_modules/.bin/mkdirp                           |     16 [32m+[m
+ node_modules/.bin/mkdirp.cmd                       |     17 [32m+[m
+ node_modules/.bin/mkdirp.ps1                       |     28 [32m+[m
+ node_modules/.bin/node-pre-gyp                     |     16 [32m+[m
+ node_modules/.bin/node-pre-gyp.cmd                 |     17 [32m+[m
+ node_modules/.bin/node-pre-gyp.ps1                 |     28 [32m+[m
+ node_modules/.bin/node-which                       |     16 [32m+[m
+ node_modules/.bin/node-which.cmd                   |     17 [32m+[m
+ node_modules/.bin/node-which.ps1                   |     28 [32m+[m
+ node_modules/.bin/nodemon                          |     16 [32m+[m
+ node_modules/.bin/nodemon.cmd                      |     17 [32m+[m
+ node_modules/.bin/nodemon.ps1                      |     28 [32m+[m
+ node_modules/.bin/nodetouch                        |     16 [32m+[m
+ node_modules/.bin/nodetouch.cmd                    |     17 [32m+[m
+ node_modules/.bin/nodetouch.ps1                    |     28 [32m+[m
+ node_modules/.bin/nopt                             |     16 [32m+[m
+ node_modules/.bin/nopt.cmd                         |     17 [32m+[m
+ node_modules/.bin/nopt.ps1                         |     28 [32m+[m
+ node_modules/.bin/rimraf                           |     16 [32m+[m
+ node_modules/.bin/rimraf.cmd                       |     17 [32m+[m
+ node_modules/.bin/rimraf.ps1                       |     28 [32m+[m
+ node_modules/.bin/semver                           |     16 [32m+[m
+ node_modules/.bin/semver.cmd                       |     17 [32m+[m
+ node_modules/.bin/semver.ps1                       |     28 [32m+[m
+ node_modules/.bin/uuid                             |     16 [32m+[m
+ node_modules/.bin/uuid.cmd     
