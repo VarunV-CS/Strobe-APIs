@@ -3,7 +3,6 @@ const http = require("http");
 const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
-const bodyParser = require("body-parser");
 const { Productiondb_url } = require("./config/production");
 const { Developmentdb_url, isProd } = require("./config/development");
 const userRouter = require("./routes/userRoutes");
@@ -19,7 +18,6 @@ const portsTwo = 80;
 
 const port = 5000;
 app.use(express.json());
-app.use(bodyParser.json());
 
 app.use((req, res, next) => {
   console.log("HTTP Method - " + req.method + ", URL -" + req.url);
@@ -78,7 +76,7 @@ const sendMail = async (candidates) => {
 
 
 cron.schedule("0 0 * * *", async () => {
-  console.log("Running candidate check every 5 minutes");
+  console.log("Running candidate check daily at midnight");
   const thirtyDaysAgo = new Date();
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 

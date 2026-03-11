@@ -3,6 +3,6 @@ const ActivityRouter = express.Router();
 const { createActivity } = require("../controllers/activityController");
 const authMiddleware = require("../middleware/auth");
 
-ActivityRouter.post("/create", createActivity);
+ActivityRouter.post("/create", authMiddleware, createActivity);
 
 module.exports = ActivityRouter;

@@ -13,16 +13,16 @@ const {
 } = require("../controllers/employeeController");
 const authMiddleware = require("../middleware/auth");
 
-EmployeeRouter.post("/create", createEmployee);
+EmployeeRouter.post("/create", authMiddleware, createEmployee);
 
 
-EmployeeRouter.get("/get", getEmployee);
+EmployeeRouter.get("/get", authMiddleware, getEmployee);
 
 
 
-EmployeeRouter.get("/getById/:id", getEmployeeById);
+EmployeeRouter.get("/getById/:id", authMiddleware, getEmployeeById);
 
-EmployeeRouter.patch("/update/:_id", updateEmployee);
+EmployeeRouter.patch("/update/:_id", authMiddleware, updateEmployee);
 
 EmployeeRouter.post("/updateDoc", uploadDocument);
 

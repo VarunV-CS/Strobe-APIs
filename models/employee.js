@@ -47,10 +47,6 @@ const employeesSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    servicesDel: {
-      type: String,
-      default: "",
-    },
     registrationNumber: {
       type: String,
       default: "",

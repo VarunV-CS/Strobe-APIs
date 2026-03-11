@@ -63,12 +63,13 @@ const createCandidates = async (req, res) => {
       createdBy,
       surName,
     } = req.body;
+    let screeningNotesData;
     if(req.body.screeningNotes !== '' ){
       screeningNotesData={
         Notes: screeningNotes,
         createdBy: createdBy,
       };
-    } 
+    }
 
     const candidateID = Math.floor(Math.random() * 100000);
 
@@ -682,13 +683,14 @@ const createCandidates1 = async (req, res) => {
       createdBy,
       surName,
     } = req.body;
+    let lastCommsData;
     if(req.body.lastComms !== '' ){
-      lastComms={
-        lastComms: lastComms,
+      lastCommsData={
+        message: lastComms,
         createdBy: createdBy,
         timeStamp: new Date(),
       };
-    } 
+    }
 
     const candidateID = Math.floor(Math.random() * 100000);
 
@@ -727,7 +729,7 @@ const createCandidates1 = async (req, res) => {
 
       clientFeedback,
 
-      lastComms : lastComms ,
+      lastComms : lastCommsData ,
 
       experience,
 

@@ -51,13 +51,13 @@ const candidatesSchema = new mongoose.Schema(
       default: "",
     },
     screeningNotes: {
-      type: String,
+      type: mongoose.Schema.Types.Mixed,
     },
     screeningOutcome: {
       type: String,
     },
     internalInterviewNotes: {
-      type: String,
+      type: mongoose.Schema.Types.Mixed,
     },
     internalRAG: {
       type: String,

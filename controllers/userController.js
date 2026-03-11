@@ -189,4 +189,4 @@ const forgotPassword = async (req, res) => {
 
 
 
-module.exports = {signin,signup,forgotPassword,updatePassword,updateForgotPassword , updateUser};
+module.exports = {signin,signup,updatePassword,updateForgotPassword , updateUser};
